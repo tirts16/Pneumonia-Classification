@@ -34,7 +34,7 @@ def get_hyperparams():
         },
         'local': {
             'training': {
-                'epochs': 3
+                'epochs': 5
             },
             'optimizer': {
                 'lr': 0.01
@@ -80,7 +80,7 @@ def get_model_config(folder_configs, dataset, is_agg=False, party_id=0):
     model.add(Dropout(0.5))
     model.add(Dense(num_classes, activation='softmax'))
 
-    model.compile(loss=keras.losses.categorical_crossentropy,
+    model.compile(loss=keras.losses.binary_crossentropy,
                   optimizer=keras.optimizers.Adadelta(),
                   metrics=['accuracy'])
 
