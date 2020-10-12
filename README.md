@@ -1,9 +1,14 @@
 # Pneumonia-Classification
 Install ibm and create an environment and activate it.
+
 Pull the PNEUMONIA_CLASSIFICATION folder.
+
 Also pull the files from the ibmfl and perform the following.
+
 ->Replace keras_fl_model from your \anaconda3\envs\ibm\Lib\site-packages\ibmfl\model with the keras_fl_model from the model folder in ibml that was pulled from our repository. 
+
 ->Replace dataset from your \anaconda3\envs\ibm\Lib\site-packages\ibmfl\util with dataset from the util folder in ibml that was pulled from our repository.
+
 ->Add xray_keras_data_handler from util/data_handlers in ibmfl folder pulled from our repository to \anaconda3\envs\ibm\Lib\site-packages\ibmfl\util\data_handlers.
 
 step 1:
