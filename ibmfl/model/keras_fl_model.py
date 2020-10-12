@@ -73,8 +73,8 @@ class KerasFLModel(FLModel):
             self.is_keras = False
 
         # Default values for local training
-        self.batch_size = 28
-        self.epochs = 1
+        self.batch_size = 16
+        self.epochs = 5
         self.steps_per_epoch = 183
 
     def fit_model(self, train_data, fit_params=None):
@@ -296,7 +296,7 @@ class KerasFLModel(FLModel):
                 dict_metrics[names[0]] = metrics
         return dict_metrics
 
-    def evaluate_generator_model(self, test_generator, batch_size=28, **kwargs):
+    def evaluate_generator_model(self, test_generator, batch_size=16, **kwargs):
         """
         Evaluates the model based on the provided data generator.
 
